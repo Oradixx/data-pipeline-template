@@ -1,0 +1,19 @@
+# Loaded by Grafana at start-up: the database is already configured, no clicking in the UI.
+apiVersion: 1
+
+datasources:
+  - name: TimescaleDB
+    uid: timescaledb
+    type: grafana-postgresql-datasource
+    access: proxy
+    url: db:5432
+    user: ${POSTGRES_USER}
+    isDefault: true
+    editable: false
+    jsonData:
+      database: ${POSTGRES_DB}
+      sslmode: disable
+      postgresVersion: 1700
+      timescaledb: true
+    secureJsonData:
+      password: ${POSTGRES_PASSWORD}

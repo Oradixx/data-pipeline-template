@@ -1,0 +1,11 @@
+# Every JSON file in /var/lib/grafana/dashboards (= ./grafana/dashboards) becomes a dashboard.
+# Edit a dashboard in the UI, then "Export > Save to file" and replace the JSON here to version it.
+apiVersion: 1
+
+providers:
+  - name: default
+    folder: Pipeline
+    type: file
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
