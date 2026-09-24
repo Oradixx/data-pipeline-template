@@ -49,7 +49,7 @@ services:
     stop_grace_period: 10s  # time to flush the last batch on `docker compose stop`
 
   grafana:
-    image: grafana/grafana:13.2.1
+    image: grafana/grafana:13.2.2
     environment:
       GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD}
