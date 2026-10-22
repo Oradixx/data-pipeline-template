@@ -16,7 +16,7 @@ pipeline = "pipeline.cli:main"
 [dependency-groups]
 dev = [
     "mypy>=1.11",
-    "pre-commit>=4.0",
+    "pre-commit>=4.7.0",
     "pytest>=8.3",
     "pytest-asyncio>=0.24",
     "pytest-cov>=5.0",
